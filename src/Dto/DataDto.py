@@ -14,5 +14,4 @@ class UrlHitDto(BaseModel):
     id:int
     url_id:int
     timestamp: datetime
-    class Config:
-        orm_mode = True
+    model_config = ConfigDict(from_attributes=True)

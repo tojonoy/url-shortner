@@ -3,3 +3,4 @@ fastapi
 mysqlclient
 python-dotenv
 uvicorn
+psycopg2
