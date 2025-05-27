@@ -1,11 +1,11 @@
 from fastapi import FastAPI, HTTPException,Depends
 from fastapi.responses import RedirectResponse
 from fastapi.middleware.cors import CORSMiddleware
-from models.Database.database import engine, Base
+from Database.database import engine, Base
 from models.Data.DataCrud import create_url, get_url_by_short_code
 from models.Data.DataModels import Url
-from models.Dto.DataDto import UrlDto,UrlCodeDto
-from models.Database.database import get_db
+from Dto.DataDto import UrlDto,UrlCodeDto
+from Database.database import get_db
 from sqlalchemy.orm import Session
 Base.metadata.create_all(bind=engine)
 app=FastAPI()

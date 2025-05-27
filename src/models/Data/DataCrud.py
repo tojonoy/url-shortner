@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
 from models.Data.DataModels import Url, UrlHit
-from models.Service.random import get_random_code
+from Service.random import get_random_code
 
 def create_url(db: Session, original_url: str):
     short_code = get_random_code(6)
