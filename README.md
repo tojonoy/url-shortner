@@ -1,3 +1,4 @@
+Access the live one here[https://url-shortner-3jnh.onrender.com/docs]
 # url-shortner
 
 ###clone the project
